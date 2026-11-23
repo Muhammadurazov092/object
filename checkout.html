@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyurtmani rasmiylashtirish — TechStore</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-info">
+        <span>📍 O'zbekiston bo'ylab 1 kunda bepul yetkazib berish</span>
+      </div>
+      <div class="header-top-links">
+        <a href="tel:+998712000105">📞 +998 (71) 200-01-05</a>
+        <a href="orders.html">Buyurtmani tekshirish</a>
+        <a href="profile.html">Yordam</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-main">
+      <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          Tech<span>Store</span>
+        </a>
+
+        <div class="search-wrapper">
+          <form class="global-search-form">
+            <input type="text" name="search" placeholder="Mahsulotlar, toifalar yoki brendlarni qidiring...">
+            <button type="submit" class="search-submit-btn" aria-label="Qidirish">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-actions">
+          <a href="favorites.html" class="header-action-btn" title="Saralanganlar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Sevimlilar</span>
+            <span class="header-action-badge wishlist-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" title="Savat">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span>Savat</span>
+            <span class="header-action-badge cart-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="orders.html" class="header-action-btn" title="Buyurtmalarim">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Buyurtmalar</span>
+          </a>
+
+          <a href="profile.html" class="header-action-btn" title="Profil">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Profil</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header-nav" id="mainNavigation">
+      <div class="container">
+        <a href="catalog.html" class="catalog-pill-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          Barcha mahsulotlar
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="catalog.html" class="nav-link">Katalog</a></li>
+          <li><a href="favorites.html" class="nav-link">Saralanganlar</a></li>
+          <li><a href="cart.html" class="nav-link">Savat</a></li>
+          <li><a href="orders.html" class="nav-link">Buyurtmalar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="index.html">Bosh sahifa</a>
+        <span>/</span>
+        <a href="cart.html">Savat</a>
+        <span>/</span>
+        <span>Buyurtmani rasmiylashtirish</span>
+      </div>
+
+      <div class="section-title">
+        <h1>Buyurtmani rasmiylashtirish</h1>
+      </div>
+
+      <form id="checkoutForm">
+        <div class="checkout-layout">
+          
+          <!-- Left Forms Column -->
+          <div class="checkout-forms">
+            
+            <!-- 1. Customer Details -->
+            <div class="form-card">
+              <h2 class="form-card-title">
+                <span>1.</span> Qabul qiluvchi ma'lumotlari
+              </h2>
+              <div class="form-grid">
+                <div class="form-group col-span-2">
+                  <label for="checkoutFullname" class="form-label">To'liq ism-familiya *</label>
+                  <input type="text" id="checkoutFullname" class="form-control" placeholder="Masalan: Sardor Aliyev" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkoutPhone" class="form-label">Telefon raqam *</label>
+                  <input type="tel" id="checkoutPhone" class="form-control" placeholder="+998 90 123 45 67" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkoutEmail" class="form-label">Elektron pochta</label>
+                  <input type="email" id="checkoutEmail" class="form-control" placeholder="misol@pochta.uz">
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Delivery Address -->
+            <div class="form-card">
+              <h2 class="form-card-title">
+                <span>2.</span> Yetkazib berish manzili
+              </h2>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="checkoutRegion" class="form-label">Viloyat / Shahar *</label>
+                  <select id="checkoutRegion" class="form-control" required>
+                    <option value="Toshkent shahri">Toshkent shahri</option>
+                    <option value="Toshkent viloyati">Toshkent viloyati</option>
+                    <option value="Samarqand viloyati">Samarqand viloyati</option>
+                    <option value="Farg'ona viloyati">Farg'ona viloyati</option>
+                    <option value="Andijon viloyati">Andijon viloyati</option>
+                    <option value="Namangan viloyati">Namangan viloyati</option>
+                    <option value="Buxoro viloyati">Buxoro viloyati</option>
+                    <option value="Xorazm viloyati">Xorazm viloyati</option>
+                    <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+                    <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+                    <option value="Navoiy viloyati">Navoiy viloyati</option>
+                    <option value="Jizzax viloyati">Jizzax viloyati</option>
+                    <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+                    <option value="Qoraqalpog'iston">Qoraqalpog'iston Respublikasi</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Yetkazib berish usuli</label>
+                  <div style="display: flex; gap: 8px; margin-top: 6px;">
+                    <label style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer;">
+                      <input type="radio" name="deliveryMethod" value="Standart kuryer (1 kun)" checked>
+                      <span>Standart (1 kun)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer;">
+                      <input type="radio" name="deliveryMethod" value="Tezkor kuryer (3 soat)">
+                      <span>Tezkor (3 soat)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group col-span-2">
+                  <label for="checkoutAddress" class="form-label">Aniq manzil (Tuman, ko'cha, uy, xonadon) *</label>
+                  <input type="text" id="checkoutAddress" class="form-control" placeholder="Masalan: Chilonzor tumani, 9-mavze, 12-uy, 45-xonadon" required>
+                </div>
+
+                <div class="form-group col-span-2">
+                  <label for="checkoutNotes" class="form-label">Kuryer uchun qo'shimcha eslatma (ixtiyoriy)</label>
+                  <input type="text" id="checkoutNotes" class="form-control" placeholder="Masalan: Domofon kodi 45, eshik oldida qo'ng'iroq qiling">
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Payment Method -->
+            <div class="form-card">
+              <h2 class="form-card-title">
+                <span>3.</span> To'lov usulini tanlang
+              </h2>
+              <div class="radio-cards-grid">
+                <label class="radio-card-label">
+                  <input type="radio" name="paymentMethod" value="Payme" checked>
+                  <div class="radio-card-content">
+                    <div class="radio-card-title">💳 Payme</div>
+                    <div class="radio-card-desc">Karta orqali onlayn to'lov</div>
+                  </div>
+                </label>
+
+                <label class="radio-card-label">
+                  <input type="radio" name="paymentMethod" value="Click">
+                  <div class="radio-card-content">
+                    <div class="radio-card-title">🔵 Click Up</div>
+                    <div class="radio-card-desc">Tezkor mobil to'lov</div>
+                  </div>
+                </label>
+
+                <label class="radio-card-label">
+                  <input type="radio" name="paymentMethod" value="Uzum Pay">
+                  <div class="radio-card-content">
+                    <div class="radio-card-title">🟣 Uzum Pay</div>
+                    <div class="radio-card-desc">Keshbek bilan to'lash</div>
+                  </div>
+                </label>
+
+                <label class="radio-card-label">
+                  <input type="radio" name="paymentMethod" value="Qabul qilganda naqd pul">
+                  <div class="radio-card-content">
+                    <div class="radio-card-title">💵 Qabul qilganda</div>
+                    <div class="radio-card-desc">Naqd pul yoki kuryerga karta</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Summary Column -->
+          <div class="checkout-summary-column" id="checkoutSummary">
+            <div class="summary-card">
+              <h3 class="summary-title">Buyurtmadagi tovarlar</h3>
+              
+              <div id="checkoutItemsList" style="max-height: 280px; overflow-y: auto; margin-bottom: 16px;">
+                <!-- JS orqali tovarlar joylanadi -->
+              </div>
+
+              <div id="checkoutTotals">
+                <!-- JS orqali hisob-kitob -->
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 20px;">
+                Buyurtmani tasdiqlash
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </button>
+
+              <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 14px;">
+                "Buyurtmani tasdiqlash" tugmasini bosish orqali siz ommaviy ofertaga rozilik bildirasiz.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Order Success Modal -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-content">
+      <div class="modal-icon-success">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2 style="font-size: 1.5rem; margin-bottom: 8px;">Buyurtmangiz qabul qilindi! 🎉</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        Tez orada operatorimiz siz bilan bog'lanadi va yetkazib berish vaqtini aniqlashtiradi.
+      </p>
+
+      <div style="background-color: var(--bg-alt); padding: 16px; border-radius: var(--radius-md); text-align: left; margin-bottom: 24px; font-size: 0.9rem;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+          <span>Buyurtma raqami:</span>
+          <strong id="modalOrderNumber" style="color: var(--primary);">#ORD-123456</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+          <span>Umumiy to'lov:</span>
+          <strong id="modalOrderAmount">0 so'm</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span>Bog'lanish uchun:</span>
+          <strong id="modalCustomerPhone">+998 90 000 00 00</strong>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; flex-direction: column;">
+        <a href="orders.html" class="btn btn-primary btn-block">Buyurtmalarimga o'tish</a>
+        <a href="index.html" class="btn btn-secondary btn-block">Bosh sahifaga qaytish</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechStore Onlayn Do'koni. Barcha huquqlar himoyalangan.</p>
+        <p>Xavfsiz to'lov va rasmiy kafolat</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initCheckoutPage();
+    });
+  </script>
+</body>
+</html>

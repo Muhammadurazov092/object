@@ -1,0 +1,300 @@
+/* ==========================================================================
+   RESPONSIV DIZAYN VA MOBIL QURILMALAR MOSLASHUVI (CSS3 Media Queries)
+   ========================================================================== */
+
+/* 1. Planshetlar va kichik noutbuklar (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .catalog-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .features-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .gallery-main {
+    height: 380px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* 2. Katta smartfonlar va planshetlar (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-top {
+    display: none; /* Mobilda yuqori kichik barni yashirish */
+  }
+
+  .header-main .container {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .search-wrapper {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Mobil Menyu Drawer */
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: var(--shadow-hover);
+    z-index: 1000;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    overflow-y: auto;
+    padding: 24px;
+  }
+
+  .header-nav.open {
+    left: 0;
+  }
+
+  .header-nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .catalog-pill-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Overlay */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hero Banner */
+  .hero-banner {
+    flex-direction: column;
+    padding: 28px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image-wrap {
+    max-width: 100%;
+  }
+
+  /* Katalog Layout */
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  /* Mahsulotlar to'ri */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-title {
+    font-size: 0.85rem;
+  }
+
+  .current-price {
+    font-size: 1rem;
+  }
+
+  /* Savat va Buyurtma layout */
+  .cart-layout, .checkout-layout, .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cart-item {
+    grid-template-columns: 75px 1fr;
+    gap: 14px;
+  }
+
+  .cart-item-actions {
+    grid-column: span 2;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .cart-item-total-price {
+    min-width: auto;
+  }
+
+  .summary-card {
+    position: static;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .features-strip {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.col-span-2 {
+    grid-column: span 1;
+  }
+}
+
+/* 3. Kichik smartfonlar (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-action-btn span {
+    display: none; /* Matnni yashirish, faqat ikonka ko'rinadi */
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-action-btn {
+    padding: 6px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image-wrap {
+    padding-top: 75%;
+  }
+
+  .detail-price-box {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .detail-current-price {
+    font-size: 1.6rem;
+  }
+
+  .purchase-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quantity-control {
+    justify-content: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .toast {
+    min-width: auto;
+    width: 100%;
+  }
+}

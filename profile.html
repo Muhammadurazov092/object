@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mening profilim — TechStore</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-info">
+        <span>📍 O'zbekiston bo'ylab 1 kunda bepul yetkazib berish</span>
+      </div>
+      <div class="header-top-links">
+        <a href="tel:+998712000105">📞 +998 (71) 200-01-05</a>
+        <a href="orders.html">Buyurtmani tekshirish</a>
+        <a href="profile.html">Yordam</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-main">
+      <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          Tech<span>Store</span>
+        </a>
+
+        <div class="search-wrapper">
+          <form class="global-search-form">
+            <input type="text" name="search" placeholder="Mahsulotlar, toifalar yoki brendlarni qidiring...">
+            <button type="submit" class="search-submit-btn" aria-label="Qidirish">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-actions">
+          <a href="favorites.html" class="header-action-btn" title="Saralanganlar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Sevimlilar</span>
+            <span class="header-action-badge wishlist-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" title="Savat">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span>Savat</span>
+            <span class="header-action-badge cart-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="orders.html" class="header-action-btn" title="Buyurtmalarim">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Buyurtmalar</span>
+          </a>
+
+          <a href="profile.html" class="header-action-btn" title="Profil">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Profil</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header-nav" id="mainNavigation">
+      <div class="container">
+        <a href="catalog.html" class="catalog-pill-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          Barcha mahsulotlar
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="catalog.html" class="nav-link">Katalog</a></li>
+          <li><a href="favorites.html" class="nav-link">Saralanganlar</a></li>
+          <li><a href="cart.html" class="nav-link">Savat</a></li>
+          <li><a href="orders.html" class="nav-link">Buyurtmalar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="index.html">Bosh sahifa</a>
+        <span>/</span>
+        <span>Foydalanuvchi profili</span>
+      </div>
+
+      <div class="section-title">
+        <h1>Mening profilim</h1>
+      </div>
+
+      <div class="profile-layout">
+        
+        <!-- Left Profile Card -->
+        <div class="profile-card">
+          <div class="profile-avatar" id="avatarInitial">A</div>
+          <h2 class="profile-name" id="profileCardName">Anvar Karimov</h2>
+          <p class="text-muted" id="profileCardPhone">+998 90 123 45 67</p>
+
+          <div class="profile-stats">
+            <div class="stat-box">
+              <div class="stat-value" id="statsOrdersCount">0</div>
+              <div class="stat-label">Buyurtmalar</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value" id="statsWishlistCount">0</div>
+              <div class="stat-label">Sevimlilar</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;">
+            <a href="orders.html" class="btn btn-outline btn-block">
+              📦 Buyurtmalar tarixi
+            </a>
+            <a href="favorites.html" class="btn btn-secondary btn-block">
+              ❤️ Saqlangan tovarlar
+            </a>
+            <a href="cart.html" class="btn btn-secondary btn-block">
+              🛒 Savatchaga o'tish
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Edit Form -->
+        <div class="profile-form-wrap">
+          <div class="form-card">
+            <h2 class="form-card-title">
+              Shaxsiy ma'lumotlarni tahrirlash
+            </h2>
+            <form id="profileForm">
+              <div class="form-grid">
+                <div class="form-group col-span-2">
+                  <label for="profFullname" class="form-label">To'liq ismingiz</label>
+                  <input type="text" id="profFullname" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="profPhone" class="form-label">Telefon raqam</label>
+                  <input type="tel" id="profPhone" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="profEmail" class="form-label">Elektron pochta</label>
+                  <input type="email" id="profEmail" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="profRegion" class="form-label">Asosiy shahar / viloyat</label>
+                  <select id="profRegion" class="form-control">
+                    <option value="Toshkent shahri">Toshkent shahri</option>
+                    <option value="Toshkent viloyati">Toshkent viloyati</option>
+                    <option value="Samarqand viloyati">Samarqand viloyati</option>
+                    <option value="Farg'ona viloyati">Farg'ona viloyati</option>
+                    <option value="Andijon viloyati">Andijon viloyati</option>
+                    <option value="Namangan viloyati">Namangan viloyati</option>
+                    <option value="Buxoro viloyati">Buxoro viloyati</option>
+                    <option value="Xorazm viloyati">Xorazm viloyati</option>
+                    <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+                    <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+                    <option value="Navoiy viloyati">Navoiy viloyati</option>
+                    <option value="Jizzax viloyati">Jizzax viloyati</option>
+                    <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+                    <option value="Qoraqalpog'iston">Qoraqalpog'iston</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-span-2">
+                  <label for="profAddress" class="form-label">Asosiy yetkazib berish manzili</label>
+                  <input type="text" id="profAddress" class="form-control" placeholder="Tuman, ko'cha, uy, xonadon">
+                </div>
+              </div>
+
+              <div style="margin-top: 16px; display: flex; gap: 12px;">
+                <button type="submit" class="btn btn-primary btn-lg">Ma'lumotlarni saqlash</button>
+                <button type="button" class="btn btn-secondary" onclick="resetDefaultProfile()">Boshlang'ich holatga qaytarish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechStore Onlayn Do'koni. Barcha huquqlar himoyalangan.</p>
+        <p>Shaxsiy kabinet</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    function loadProfileData() {
+      const user = getUserProfile() || {
+        fullname: "Anvar Karimov",
+        phone: "+998 90 123 45 67",
+        email: "anvar@example.com",
+        region: "Toshkent shahri",
+        address: "Chilonzor tumani, 9-mavze, 15-uy"
+      };
+
+      document.getElementById("profFullname").value = user.fullname || "";
+      document.getElementById("profPhone").value = user.phone || "";
+      document.getElementById("profEmail").value = user.email || "";
+      document.getElementById("profRegion").value = user.region || "Toshkent shahri";
+      document.getElementById("profAddress").value = user.address || "";
+
+      document.getElementById("profileCardName").textContent = user.fullname || "Foydalanuvchi";
+      document.getElementById("profileCardPhone").textContent = user.phone || "";
+      document.getElementById("avatarInitial").textContent = (user.fullname && user.fullname.trim().length > 0) ? user.fullname.trim()[0].toUpperCase() : "U";
+
+      // Statistika
+      const orders = getOrders();
+      const wishlist = getWishlist();
+      document.getElementById("statsOrdersCount").textContent = orders.length;
+      document.getElementById("statsWishlistCount").textContent = wishlist.length;
+    }
+
+    function resetDefaultProfile() {
+      const defaultUser = {
+        fullname: "Anvar Karimov",
+        phone: "+998 90 123 45 67",
+        email: "anvar@example.com",
+        region: "Toshkent shahri",
+        address: "Chilonzor tumani, 9-mavze, 15-uy"
+      };
+      saveUserProfile(defaultUser);
+      loadProfileData();
+      showToast("Boshlang'ich ma'lumotlar tiklandi", "info");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      loadProfileData();
+
+      document.getElementById("profileForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const updated = {
+          fullname: document.getElementById("profFullname").value.trim(),
+          phone: document.getElementById("profPhone").value.trim(),
+          email: document.getElementById("profEmail").value.trim(),
+          region: document.getElementById("profRegion").value,
+          address: document.getElementById("profAddress").value.trim()
+        };
+        saveUserProfile(updated);
+        loadProfileData();
+        showToast("Profilingiz muvaffaqiyatli yangilandi! ✅", "success");
+      });
+    });
+  </script>
+</body>
+</html>

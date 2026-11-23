@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog — TechStore Zamonaviy Do'koni</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Strip -->
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-info">
+        <span>📍 O'zbekiston bo'ylab 1 kunda bepul yetkazib berish</span>
+      </div>
+      <div class="header-top-links">
+        <a href="tel:+998712000105">📞 +998 (71) 200-01-05</a>
+        <a href="orders.html">Buyurtmani tekshirish</a>
+        <a href="profile.html">Yordam</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-main">
+      <div class="container">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="index.html" class="logo">
+          <div class="logo-icon">⚡</div>
+          Tech<span>Store</span>
+        </a>
+
+        <div class="search-wrapper">
+          <form class="global-search-form" id="catalogSearchForm">
+            <input type="text" name="search" id="catalogSearchInput" placeholder="Katalogdan qidirish...">
+            <button type="submit" class="search-submit-btn" aria-label="Qidirish">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-actions">
+          <a href="favorites.html" class="header-action-btn" title="Saralanganlar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Sevimlilar</span>
+            <span class="header-action-badge wishlist-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="cart.html" class="header-action-btn" title="Savat">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span>Savat</span>
+            <span class="header-action-badge cart-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="orders.html" class="header-action-btn" title="Buyurtmalarim">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Buyurtmalar</span>
+          </a>
+
+          <a href="profile.html" class="header-action-btn" title="Profil">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Profil</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="header-nav" id="mainNavigation">
+      <div class="container">
+        <a href="catalog.html" class="catalog-pill-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          Barcha mahsulotlar
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="catalog.html" class="nav-link active">Katalog</a></li>
+          <li><a href="catalog.html?category=Smartfonlar" class="nav-link">Smartfonlar</a></li>
+          <li><a href="catalog.html?category=Noutbuklar" class="nav-link">Noutbuklar</a></li>
+          <li><a href="catalog.html?category=Audio+texnika" class="nav-link">Audio</a></li>
+          <li><a href="catalog.html?category=Maishiy+texnika" class="nav-link">Maishiy texnika</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <a href="index.html">Bosh sahifa</a>
+        <span>/</span>
+        <span id="breadcrumbCategory">Katalog</span>
+      </div>
+
+      <div class="catalog-layout">
+        
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+          <div class="filter-header">
+            <h3>Filtrlar</h3>
+            <button class="btn btn-link btn-sm" id="resetFiltersBtn" style="font-size: 0.8rem;">Tozalash</button>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Toifalar</h4>
+            <ul class="filter-list" id="categoryFilterList">
+              <!-- JS orqali toifalar joylanadi -->
+            </ul>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Narx oralig'i (so'm)</h4>
+            <div class="price-inputs">
+              <input type="number" id="minPriceInput" placeholder="Dan" min="0" step="500000">
+              <span>—</span>
+              <input type="number" id="maxPriceInput" placeholder="Gacha" min="0" step="500000">
+            </div>
+            <button class="btn btn-secondary btn-sm btn-block" id="applyPriceFilterBtn" style="margin-top: 10px;">Qo'llash</button>
+          </div>
+
+          <!-- In Stock Only -->
+          <div class="filter-group">
+            <label class="filter-label">
+              <input type="checkbox" id="inStockCheckbox">
+              <span>Faqat omborda mavjudlari</span>
+            </label>
+          </div>
+        </aside>
+
+        <!-- Catalog Main Area -->
+        <section class="catalog-main">
+          <!-- Toolbar -->
+          <div class="catalog-toolbar">
+            <div class="catalog-count" id="catalogCountText">Mahsulotlar yuklanmoqda...</div>
+            <div class="catalog-sort">
+              <label for="catalogSortSelect">Saralash:</label>
+              <select id="catalogSortSelect">
+                <option value="popular">Ommabopligi bo'yicha</option>
+                <option value="price-asc">Narx: arzondan qimmatga</option>
+                <option value="price-desc">Narx: qimmatdan arzonga</option>
+                <option value="rating-desc">Reyting bo'yicha</option>
+                <option value="name-asc">Nom bo'yicha (A-Z)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="catalogProductsGrid">
+            <!-- JS orqali kartochkalar chiziladi -->
+          </div>
+
+          <!-- Empty State if no match -->
+          <div class="empty-state" id="catalogEmptyState" style="display: none;">
+            <div class="empty-state-icon">🔍</div>
+            <h3>Mahsulot topilmadi</h3>
+            <p>Tanlangan filtrlar yoki qidiruv so'rovi bo'yicha hech qanday mahsulot mavjud emas. Filtrlarni tozalab ko'ring.</p>
+            <button class="btn btn-primary" id="emptyStateResetBtn">Barcha mahsulotlarni ko'rsatish</button>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            Tech<span style="color: #3b82f6;">Store</span>
+          </a>
+          <p class="footer-desc">TechStore — O'zbekistondagi eng zamonaviy elektronika, gadjetlar va maishiy texnikalarni qulay narxlarda taqdim etuvchi ishonchli onlayn internet do'kon.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Bo'limlar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="catalog.html">Barcha mahsulotlar</a></li>
+            <li><a href="favorites.html">Saralanganlar</a></li>
+            <li><a href="cart.html">Savatcha</a></li>
+            <li><a href="orders.html">Buyurtmalarim</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Katalog</h4>
+          <ul class="footer-links">
+            <li><a href="catalog.html?category=Smartfonlar">Smartfonlar</a></li>
+            <li><a href="catalog.html?category=Noutbuklar">Noutbuklar</a></li>
+            <li><a href="catalog.html?category=Audio+texnika">Audio texnika</a></li>
+            <li><a href="catalog.html?category=Aqlli+soatlar">Aqlli soatlar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Aloqa</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Telefon:</strong> +998 (71) 200-01-05</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Manzil:</strong> Toshkent sh., Chilonzor tumani</p>
+          <p style="font-size: 0.9rem;"><strong>Ish vaqti:</strong> 24/7 uzluksiz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechStore Onlayn Do'koni. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    // Katalog boshqaruvi (Vanilla JS)
+    let currentCategory = "Barchasi";
+    let currentSearch = "";
+    let currentMinPrice = null;
+    let currentMaxPrice = null;
+    let currentSort = "popular";
+    let inStockOnly = false;
+
+    // URL parametrlari bo'yicha boshlang'ich qiymatlarni olish
+    function readURLParams() {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get("category");
+      const search = params.get("search");
+
+      if (cat) currentCategory = cat;
+      if (search) {
+        currentSearch = search;
+        const input = document.getElementById("catalogSearchInput");
+        if (input) input.value = search;
+      }
+    }
+
+    // Toifalar ro'yxatini render qilish
+    function renderCategoryFilters() {
+      const container = document.getElementById("categoryFilterList");
+      if (!container) return;
+
+      const categories = getCategories();
+      container.innerHTML = categories.map(cat => `
+        <li>
+          <label class="filter-label">
+            <input type="radio" name="catalogCategory" value="${cat}" ${cat.toLowerCase() === currentCategory.toLowerCase() ? "checked" : ""}>
+            <span>${cat}</span>
+          </label>
+        </li>
+      `).join("");
+
+      // Radio tugmalarini tinglash
+      container.querySelectorAll("input[name='catalogCategory']").forEach(radio => {
+        radio.addEventListener("change", (e) => {
+          currentCategory = e.target.value;
+          updateURL();
+          applyCatalogFilters();
+        });
+      });
+    }
+
+    function updateURL() {
+      const url = new URL(window.location);
+      if (currentCategory && currentCategory !== "Barchasi") {
+        url.searchParams.set("category", currentCategory);
+      } else {
+        url.searchParams.delete("category");
+      }
+      if (currentSearch) {
+        url.searchParams.set("search", currentSearch);
+      } else {
+        url.searchParams.delete("search");
+      }
+      window.history.replaceState({}, "", url);
+    }
+
+    // Mahsulotlarni filtrlash va chizish
+    function applyCatalogFilters() {
+      const grid = document.getElementById("catalogProductsGrid");
+      const emptyState = document.getElementById("catalogEmptyState");
+      const countText = document.getElementById("catalogCountText");
+      const breadcrumb = document.getElementById("breadcrumbCategory");
+
+      if (breadcrumb) {
+        breadcrumb.textContent = currentCategory === "Barchasi" ? "Barcha mahsulotlar" : currentCategory;
+      }
+
+      const filtered = filterProducts({
+        category: currentCategory,
+        search: currentSearch,
+        minPrice: currentMinPrice,
+        maxPrice: currentMaxPrice,
+        sortBy: currentSort,
+        inStockOnly: inStockOnly
+      });
+
+      if (countText) {
+        countText.textContent = `${filtered.length} ta mahsulot topildi`;
+      }
+
+      if (filtered.length === 0) {
+        grid.style.display = "none";
+        emptyState.style.display = "block";
+      } else {
+        grid.style.display = "grid";
+        emptyState.style.display = "none";
+        grid.innerHTML = filtered.map(p => renderProductCardHTML(p)).join("");
+      }
+    }
+
+    // Initsializatsiya
+    document.addEventListener("DOMContentLoaded", () => {
+      readURLParams();
+      renderCategoryFilters();
+
+      // Qidiruv shakli
+      const searchForm = document.getElementById("catalogSearchForm");
+      if (searchForm) {
+        searchForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const val = document.getElementById("catalogSearchInput")?.value.trim() || "";
+          currentSearch = val;
+          updateURL();
+          applyCatalogFilters();
+        });
+      }
+
+      // Saralash
+      const sortSelect = document.getElementById("catalogSortSelect");
+      if (sortSelect) {
+        sortSelect.addEventListener("change", (e) => {
+          currentSort = e.target.value;
+          applyCatalogFilters();
+        });
+      }
+
+      // Narx filtri
+      const priceBtn = document.getElementById("applyPriceFilterBtn");
+      if (priceBtn) {
+        priceBtn.addEventListener("click", () => {
+          const minVal = parseFloat(document.getElementById("minPriceInput")?.value);
+          const maxVal = parseFloat(document.getElementById("maxPriceInput")?.value);
+          currentMinPrice = !isNaN(minVal) ? minVal : null;
+          currentMaxPrice = !isNaN(maxVal) ? maxVal : null;
+          applyCatalogFilters();
+        });
+      }
+
+      // Omborda mavjudligi
+      const inStockCb = document.getElementById("inStockCheckbox");
+      if (inStockCb) {
+        inStockCb.addEventListener("change", (e) => {
+          inStockOnly = e.target.checked;
+          applyCatalogFilters();
+        });
+      }
+
+      // Tozalash tugmasi
+      const resetBtn = document.getElementById("resetFiltersBtn");
+      const emptyResetBtn = document.getElementById("emptyStateResetBtn");
+      const resetAll = () => {
+        currentCategory = "Barchasi";
+        currentSearch = "";
+        currentMinPrice = null;
+        currentMaxPrice = null;
+        inStockOnly = false;
+        document.getElementById("minPriceInput").value = "";
+        document.getElementById("maxPriceInput").value = "";
+        document.getElementById("catalogSearchInput").value = "";
+        if (inStockCb) inStockCb.checked = false;
+        renderCategoryFilters();
+        updateURL();
+        applyCatalogFilters();
+      };
+
+      if (resetBtn) resetBtn.addEventListener("click", resetAll);
+      if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetAll);
+
+      // Dastlabki chizish
+      applyCatalogFilters();
+    });
+  </script>
+</body>
+</html>
